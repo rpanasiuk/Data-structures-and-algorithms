@@ -15,3 +15,11 @@ test('capitalizes the first letter', () => {
     'I Love Breakfast At Bill Miller Bbq'
   );
 });
+
+test('Capitalizing with a question mark at the beginning.', () => {
+	expect(capitalize('?que pasa?')).toEqual('?Que Pasa?');
+});
+
+test('Capitalizes one char string.', () => {
+	expect(capitalize('c')).toEqual('C');
+});
